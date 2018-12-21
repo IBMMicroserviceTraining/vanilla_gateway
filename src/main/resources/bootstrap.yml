@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: vanilla_gateway
+  profiles:
+    active: dev
+
+server:
+  port: 8603
+
+      

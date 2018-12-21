@@ -1,0 +1,20 @@
+zuul:
+ routes:
+    training_service: 
+      path: /training/**
+      serviceId: trainingservice
+      strip-prefix: false
+    trainer_servcie: 
+      path: /trainer/**
+      serviceId: trainerservice
+      strip-prefix: false
+      
+ribbon:
+  eureka:
+   enabled: true    
+ 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8601/eureka/
+        
